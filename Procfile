@@ -1,2 +1,2 @@
 # <process type>: <command>
-web: gunicorn sample.hello:app --log-file -
+web: gunicorn training.hello:app --log-file -
