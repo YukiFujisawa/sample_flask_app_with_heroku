@@ -1,1 +1,1 @@
-# HelokuデプロイできるFlaskのサンプルアプリ
+# Heloku用のFlaskサンプルアプリ
