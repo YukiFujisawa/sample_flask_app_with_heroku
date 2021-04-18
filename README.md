@@ -6,7 +6,8 @@ https://flask.palletsprojects.com/en/1.1.x/installation/#installation
 
 ```
 $ python --version
-Python 3.8.3
+ * python3.* であることを確認してください。
+ * python2.*の場合は、`python3 --version` で、python3が実行できるかもしれません。
 $ python -m venv venv
 $ . venv/bin/activate
 $ pip install --upgrade pip
@@ -26,8 +27,8 @@ $ gunicorn sample.hello:app
 
 ```
 $ pip freeze > requirements.txt
-$ vi Procfile
-web: gunicorn training.hello:app --log-file -
+$ git add .
+$ git commit -m 'Deploy to Heroku.'
 $ heroku login
 $ heroku create
 $ git push heroku main
