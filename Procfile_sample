@@ -1,0 +1,7 @@
+# <process type>: <command>
+# A Heroku app’s web process type is special:
+# it’s the only process type that can receive external HTTP traffic from Heroku’s routers.
+# If your app includes a web server, you should declare it as your app’s web process.
+# https://devcenter.heroku.com/articles/procfile#procfile-format
+
+web: gunicorn sample.hello:app --log-file -
