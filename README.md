@@ -28,6 +28,7 @@ $ gunicorn sample.hello:app
 $ pip freeze > requirements.txt
 $ vi Procfile
 web: gunicorn training.hello:app --log-file -
+$ heroku login
 $ heroku create
 $ git push heroku main
 ```
